@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <div>My Workout</div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxLayoutGap="10px" fxHide.xs>
+    <a *ngIf="!(isAuth$ | async)" routerLink="/signup">Signup</a>
+    <a *ngIf="!(isAuth$ | async)" routerLink="/signin">Signin</a>
+    <a *ngIf="isAuth$ | async" routerLink="/training">Training</a>
+    <a *ngIf="isAuth$ | async" (click)="logout()">Logout</a>
+
+  </div>
+</mat-toolbar>

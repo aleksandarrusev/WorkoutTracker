@@ -1,0 +1,9 @@
+<section class="current-training-block" fxLayout="column" fxLayoutAlign="center center">
+  <mat-progress-spinner [value]="progress" mode="determinate"></mat-progress-spinner>
+  <h1>{{ progress }}%</h1>
+  <button mat-raised-button (click)="onStop()">Stop</button>
+  <h3>{{ training.name}}</h3>
+  <mat-list role="list">
+    <mat-list-item role="listitem" *ngFor="let exercise of training.exercises">{{ exercise}}</mat-list-item>
+  </mat-list>
+</section>

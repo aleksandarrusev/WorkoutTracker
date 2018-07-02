@@ -1,0 +1,19 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+html {
+  font-family: Roboto, sans-serif;
+  height:100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  height:100%;
+}
+
+.mat-tab-labels {
+  justify-content: center;
+}
+h1,h2,h3 {
+  margin-top:25px;
+  text-align:center;
+}
