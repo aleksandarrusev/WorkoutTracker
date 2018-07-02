@@ -6,6 +6,9 @@ The app is built using Angular Material, Firebase and Redux(ngrx).
 
 Inspired by a course I participated in.
 
+The folder /environments has been removed intentionally, so in order to run the app
+you have to manually create it. 
+
 # Workout Tracker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
